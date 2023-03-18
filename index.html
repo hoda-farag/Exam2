@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+                                                <!-- main page -->
+    <section class="home">
+        <div class="loading-screen">
+            <div class="sk-chase d-flex justify-content-center align-items-center ">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+        </div>
+      
+    <div class="lists">
+        <nav>
+            <ul >
+                <a class="animate__animated animate__backInUp" href="#search" id="search"><li>Search</li></a>
+                <a href="#Categories" id="category"><li>Categories</li></a>
+                <a href="#Area" id="area"><li>Area</li></a>
+                <a href="#Ingredients" id="ingred"><li>Ingredients</li></a>
+                <a href="#Contact Us" id="contact"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+        <footer>
+            <div class="contactsList ps-4">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p class="text-white">Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <div class="toggle bg-white">
+        <img src="logo.png" class="w-100 pt-5" alt="">
+        <i class="fa-solid fa-bars " id="open" ></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <div class="share">
+            <i class="fa-solid fa-share-nodes d-block"></i>
+        <i class="fa-solid fa-globe"></i>
+        </div>
+
+
+    </div>
+    <div class="container position-absolute items ">
+        <div class="row " id="item">
+           
+         </div>
+    </div>
+   </section> 
+                                                <!-- details page -->
+   <section class="details d-none">
+        <div class="container">
+            <div class="row " id="detailsParent">
+               
+            </div>
+        </div>
+   </section>
+                                                <!-- search page -->
+   <section class="search ">
+<div class="container d-flex">
+    <input type="text" onkeyup="searchByName(this.value)" class="w-50 mx-3 bg-transparent p-2 rounded-3 border-1  border-light " placeholder="search By Name" id="byName">
+<input type="text" onkeyup="searchByLetter(this.value)" class="w-50 mx-3 bg-transparent p-2 rounded-3 border-1  border-light" placeholder="search By First Letter" id="byLetter">
+</div>
+<div class="container ">
+    <div class="row" id="result">
+            <div class="col-md-3 result-item">
+                <div class="img-container">
+                    <img src="" class="w-100 rounded-3" alt="">
+                    <div class="overlay position-absolute d-flex align-items-center">
+                        <h3 class="text-dark ps-3" id="food-name"></h3>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+   </section>
+                                                <!-- contact -->
+<section class="contacts" id="contactsPage">
+    <div class="container d-flex justify-content-around p-2 ">
+        <input type="text" class="w-50 mx-3  p-2 rounded-3" placeholder="Enter Your Name">
+        <input type="text" class="w-50 mx-3  p-2 rounded-3" placeholder="Enter Your Email">
+    </div>
+    <div class="container d-flex justify-content-around p-2 ">
+        <input type="text" class="w-50 mx-3  p-2 rounded-3" placeholder="Enter Your Phone">
+        <input type="text" class="w-50 mx-3  p-2 rounded-3" placeholder="Enter Your Age">
+    </div>
+    <div class="container d-flex justify-content-around p-2 ">
+        <input type="text" class="w-50 mx-3  p-2 rounded-3" placeholder="Enter Your Password">
+        <input type="text" class="w-50 mx-3  p-2 rounded-3" placeholder="Enter Your RePassword">
+    </div>
+    <div class="bottom d-flex justify-content-center">
+        <button class="btn btn-outline-danger mx-auto submit">Submit</button>
+    </div>
+ 
+</section>
+                                                <!-- area -->
+<div class="area p-5" >
+    <div class="container">
+        <div class="row" id="Area">
+         
+        </div>
+    </div>
+</div>
+                                            <!-- ingredients -->
+<div class="ingredients" id="ingred">
+<div class="container">
+    <div class="row" id="Ingrediant">
+      
+    </div>
+</div>
+</div>
+                                                <!-- category -->
+<div class="category" >
+<div class="container">
+    <div class="row p-5" id="categoryRow" >
+        
+    </div>
+</div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
